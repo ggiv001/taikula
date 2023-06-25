@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>配置</title>
+    <title>泰酷辣</title>
     <style>
         * {
             padding: 0;
@@ -27,7 +27,7 @@
 
         .title {
             padding-top: 90px;
-            padding-left: 10%;
+            padding-left: 8%;
         }
 
         .manual-img {
@@ -35,27 +35,36 @@
             width: 350px;
             height: auto;
             top: -60px;
-            right: -70px;
+            right: -80px;
         }
 
-        .addr {
+        .addr-box {
             box-sizing: border-box;
             width: 90%;
-            height: 80px;
             background-color: #fff;
             margin: 10px auto;
             margin-top: -40px;
             position: relative;
             border-radius: 10px;
-            padding: 10px 30px;
+            padding: 10px 0;
+            font-size: 18px;
+        }
+
+        .addr {
             display: flex;
             align-items: center;
+            position: relative;
+            padding: 10px 30px;
+        }
+
+        .copy {
+            color: rgb(5 21 255);
         }
 
         .addr::before {
             content: '';
             width: 5px;
-            height: 40%;
+            height: 50%;
             position: absolute;
             top: 50%;
             left: 12px;
@@ -69,23 +78,34 @@
             width: 90%;
             min-height: 80px;
             background-color: #fff;
-            margin: 30px auto;
+            margin: 10px auto;
             border-radius: 10px;
             padding: 15px;
-            display: flex;
-            flex-direction: column;
+            line-height: 1.8em;
         }
 
-        .manual>div{
-            margin: 5px 0;
+        h4{
+            margin-bottom: 10px;
         }
+
+        h4::before {
+            display: inline-block;
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: #626161;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="box">
         <div class="top">
-            <div class="title">ip配置说明</div>
+            <div class="title">泰酷辣<div>自定义服务器</div>
+            </div>
             <svg class="manual-img" height="1024" node-id="1" sillyvg="true" template-height="1024"
                 template-width="1024" version="1.1" viewBox="0 0 1024 1024" width="1024"
                 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -408,13 +428,25 @@
                 </g>
             </svg>
         </div>
-        <div class="addr">
-            <span>服务器地址</span>
-            <span>服务器地址xxx</span>
+        <div class="addr-box">
+            <div class="addr">
+                <span>服务器地址1：</span>
+                <span class="copy">xxxxxxx</span>
+            </div>
+            <div class="addr">
+                <span>服务器地址2：</span>
+                <span class="copy">xxxxxxx</span>
+            </div>
+        </div>
+        <div class="manual"> 
+            <h4>使用</h4>
+            <div>
+                · 如果当前不可用，可复制此地址到app内配置后使用 
+            </div>
         </div>
         <div class="manual">
-            <div> · 如果当前不可用，可复制此地址到app内配置后使用</div>
-            <div> · 如果当前不可用，可复制此地址到app内配置后使用</div>
+            <h4>关于</h4>   
+            <div> · 泰酷辣是一款高速、稳定、安全的VPN服务，可以帮助用户在互联网上畅游无阻。我们提供了多个服务器节点，让用户可以选择最优的节点，以获得更快的网络速度。同时，我们采用了多种安全措施，包括加密传输、防火墙等，以保护用户的网络安全。无论您是在公共Wi-Fi上、在国外旅行、或者需要访问被封锁的网站，泰酷辣VPN都可以帮助您畅游无阻。让您的网络体验更加自由、安全、畅快！</div>
         </div>
     </div>
 </body>
